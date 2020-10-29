@@ -1,11 +1,14 @@
-var App = App || {}
+var App = App || {};
 
 App.ClickCounter = () => {
-  let value = 0
+  let value = 0;
 
   return {
     getValue() {
-      return value
-    }
-  }
-}
+      return value;
+    },
+    increase() {
+      value++;
+    },
+  };
+};
